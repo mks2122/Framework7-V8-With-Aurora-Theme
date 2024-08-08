@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Page</title>
+    <link rel="stylesheet" href="path/to/your/framework7.css">
+</head>
+<body>
+    <div class="page">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="title">New Page</div>
+            </div>
+        </div>
+        <div class="page-content">
+            <p>Hello, this is a new page!</p>
+        </div>
+    </div>
+    <script src="path/to/your/framework7.js"></script>
+</body>
+</html>

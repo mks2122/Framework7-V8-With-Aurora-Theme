@@ -2,6 +2,8 @@
   "name": "framework7-source",
   "version": "0.0.0",
   "scripts": {
+    "build": "gulp build",
+    "start": "gulp serve",
     "/*============ Build ============*/": "============",
     "build:dev": "cross-env-shell NODE_ENV=development \"gulp build-core && gulp build-vue && gulp build-react && gulp build-svelte\"",
     "build:prod": "cross-env-shell NODE_ENV=production \"gulp build-core && gulp build-vue && gulp build-react && gulp build-svelte\"",
@@ -66,9 +68,14 @@
     "last 5 Firefox versions"
   ],
   "dependencies": {
+    "browser-sync": "^3.0.2",
     "dom7": "^4.0.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
     "htm": "^3.1.1",
     "path-to-regexp": "^6.2.0",
+    "sass": "^1.77.8",
     "skeleton-elements": "^4.0.1",
     "ssr-window": "^4.0.2",
     "swiper": "^10.2.0"

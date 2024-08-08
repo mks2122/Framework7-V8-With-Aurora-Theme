@@ -22,6 +22,45 @@ const buildSvelteTypings = require('./build-svelte-typings.js');
 
 const env = process.env.NODE_ENV || 'development';
 
+const browserSync = require('browser-sync').create();
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const sass = require('gulp-sass')(require('sass'));
+
+
+// New tasks
+gulp.task('styles', function() {
+  return gulp.src('src/custom/css/**/*.css')
+      .pipe(gulp.dest('dist/css'))
+      .pipe(browserSync.stream());
+});
+
+gulp.task('scripts', function() {
+  return gulp.src('src/custom/js/**/*.js')
+      .pipe(concat('app.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest('dist/js'))
+      .pipe(browserSync.stream());
+});
+
+gulp.task('html', function() {
+  return gulp.src('src/custom/index.html')
+      .pipe(gulp.dest('dist'))
+      .pipe(browserSync.stream());
+});
+
+gulp.task('serve', function() {
+  browserSync.init({
+      server: './dist'
+  });
+
+  gulp.watch('src/custom/css/**/*.css', gulp.series('styles'));
+  gulp.watch('src/custom/js/**/*.js', gulp.series('scripts'));
+  gulp.watch('src/custom/index.html', gulp.series('html'));
+});
+
+gulp.task('build', gulp.series('styles', 'scripts', 'html'));
+
 // Tasks
 gulp.task('ks-core', buildKsCore);
 

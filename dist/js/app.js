@@ -1,0 +1,1 @@
+import Framework7 from"framework7/lite/bundle";import route from"./route";const app=new Framework7({root:"#app",routes:route}),routes=(document.addEventListener("DOMContentLoaded",function(){console.log("App is loaded")}),[{path:"/",url:"pages/index.html"},{path:"/about/",url:"pages/about.html"},{path:"/contact/",url:"pages/contact.html"}]);export default routes;
