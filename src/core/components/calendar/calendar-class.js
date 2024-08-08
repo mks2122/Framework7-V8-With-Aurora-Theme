@@ -482,6 +482,9 @@ class Calendar extends Framework7Class {
       if (app.width >= 768) {
         return true;
       }
+      if (device.desktop && app.theme === 'aurora') {
+        return true;
+      }
     }
     return false;
   }

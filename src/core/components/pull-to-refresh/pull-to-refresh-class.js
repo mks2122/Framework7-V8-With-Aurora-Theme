@@ -24,6 +24,7 @@ class PullToRefresh extends Framework7Class {
 
     const isMaterial = app.theme === 'md';
     const isIos = app.theme === 'ios';
+    const isAurora = app.theme === 'aurora';
 
     // Done
     ptr.done = function done() {
@@ -105,6 +106,8 @@ class PullToRefresh extends Framework7Class {
       triggerDistance = 66;
     } else if (isIos) {
       triggerDistance = 44;
+    } else if (isAurora) {
+      triggerDistance = 38;
     }
 
     function setPreloaderProgress(progress = 0) {

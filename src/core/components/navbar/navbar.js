@@ -346,6 +346,7 @@ const Navbar = {
         } else if (Number.isNaN(navbarTitleLargeHeight)) {
           if (app.theme === 'ios') navbarTitleLargeHeight = 52;
           else if (app.theme === 'md') navbarTitleLargeHeight = 88;
+          else if (app.theme === 'aurora') navbarTitleLargeHeight = 38;
         }
       } else if ($titleLargeEl.length) {
         navbarTitleLargeHeight = $titleLargeEl[0].offsetHeight;
@@ -353,6 +354,7 @@ const Navbar = {
         // eslint-disable-next-line
         if (app.theme === 'ios') navbarTitleLargeHeight = 52;
         else if (app.theme === 'md') navbarTitleLargeHeight = 88;
+        else if (app.theme === 'aurora') navbarTitleLargeHeight = 38;
       }
     }
 
@@ -648,6 +650,7 @@ export default {
       scrollTopOnTitleClick: true,
       iosCenterTitle: true,
       mdCenterTitle: false,
+      auroraCenterTitle: true,
       hideOnPageScroll: false,
       showOnPageScrollEnd: true,
       showOnPageScrollTop: true,

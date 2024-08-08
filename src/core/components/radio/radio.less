@@ -16,6 +16,9 @@
   display: block;
   flex-shrink: 0;
 }
+.aurora .icon-radio {
+  border: var(--f7-radio-border-width) solid var(--f7-radio-inactive-color);
+}
 .radio,
 .icon-radio {
   &.color-white,
@@ -61,4 +64,7 @@ label.item-radio {
 });
 .if-md-theme({
   @import './radio-md.less';
+});
+.if-aurora-theme({
+  @import './radio-aurora.less';
 });

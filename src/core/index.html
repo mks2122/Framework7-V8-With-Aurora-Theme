@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Framework7 Kitchen Sink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/8.0.0/css/framework7.bundle.min.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+
+    <!-- Main view -->
+    <div class="view view-main">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="title">Kitchen Sink</div>
+          </div>
+        </div>
+        <div class="page-content">
+          <!-- Add your kitchen sink components here -->
+          <div class="block-title">Buttons</div>
+          <div class="block">
+            <a href="#" class="button">Button</a>
+            <a href="#" class="button button-fill">Fill Button</a>
+            <a href="#" class="button button-raised">Raised Button</a>
+          </div>
+          <div class="block-title">List</div>
+          <div class="list">
+            <ul>
+              <li>
+                <a href="/page1/" class="item-link item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Go to Page 1</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/page2/" class="item-link item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Go to Page 2</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Add more components as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/8.0.0/js/framework7.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,6 +1,14 @@
 import Dom7 from 'dom7';
 // IMPORT_BASE
 
+//importing request module
+import request, {
+    RequestError,
+    RequestResponse,
+    RequestParameters,
+    RequestXHR,
+  } from './shared/request';
+
 import { getSupport, Support } from './shared/get-support.js';
 import { getDevice, Device } from './shared/get-device.js';
 import { Utils } from './shared/utils.js';
@@ -17,6 +25,12 @@ declare module './components/app/app-class.js' {
 }
 
 export {
+  // export request module
+  request,
+  RequestError,
+  RequestResponse,
+  RequestParameters,
+  RequestXHR,
   getSupport,
   Support,
   getDevice,

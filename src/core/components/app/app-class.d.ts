@@ -1,6 +1,10 @@
 import { Dom7, Dom7Array } from 'dom7';
 import { Router } from '../../modules/router/router.js';
 import { DeviceParams, Device } from '../../shared/get-device.js';
+
+//added requests
+import { Request } from '../../shared/request.js';
+
 import { Support } from '../../shared/get-support.js';
 import { Utils } from '../../shared/utils.js';
 import {
@@ -178,6 +182,10 @@ declare class Framework7 implements Framework7 {
   static utils: Utils;
   static Events: Events;
   static Component: ComponentClass;
+
+  //   added requests
+  static request: Request;
+
   /** Register custom component */
   static registerComponent(tagName: string, component: Component): void;
   /** Unregister custom component */

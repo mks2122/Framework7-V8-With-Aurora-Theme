@@ -24,6 +24,8 @@ export const id: (mask: string, map: string) => string;
 export const mdPreloaderContent: () => string;
 /** Returns preloader inner content for iOS theme */
 export const iosPreloaderContent: () => string;
+/** Returns preloader inner content for Aurora theme */
+export const auroraPreloaderContent: () => string;
 /** Deletes object properties */
 export const deleteProps: (obj: object) => void;
 /**  */
@@ -69,6 +71,8 @@ export interface Utils {
   mdPreloaderContent: () => string;
   /** Returns preloader inner content for iOS theme */
   iosPreloaderContent: () => string;
+  /** Returns preloader inner content for Aurora theme */
+  auroraPreloaderContent: () => string;
   /** Deletes object properties */
   deleteProps: (obj: object) => void;
   /**  */

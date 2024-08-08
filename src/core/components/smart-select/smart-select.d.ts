@@ -93,6 +93,8 @@ export namespace SmartSelect {
     optionIconIos?: string;
     /** Same as `optionIcon` but will apply only when MD theme is active */
     optionIconMd?: string;
+    /** Same as `optionIcon` but will apply only when Aurora theme is active */
+    optionIconAurora?: string;
     /** Specify checkbox/radio icon position, can be 'start' or 'end' (default 'start') */
     inputIconPosition?: string;
 

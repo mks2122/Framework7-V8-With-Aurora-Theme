@@ -83,7 +83,8 @@
 }
 .chip-outline,
 .ios .chip-outline-ios,
-.md .chip-outline-md {
+.md .chip-outline-md,
+.aurora .chip-outline-aurora {
   border: 1px solid var(--f7-chip-outline-border-color);
   color: var(--f7-chip-outline-text-color);
   background: none;
@@ -103,4 +104,7 @@
 });
 .if-md-theme({
   @import './chip-md.less';
+});
+.if-aurora-theme({
+  @import './chip-aurora.less';
 });

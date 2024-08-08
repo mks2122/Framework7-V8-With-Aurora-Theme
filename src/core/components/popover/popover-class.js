@@ -197,6 +197,10 @@ class Popover extends Modal {
       $arrowEl.removeClass('on-left on-right on-top on-bottom').css({ left: '', top: '' });
       arrowSize = $arrowEl.width() / 2;
     }
+    if (app.theme === 'aurora') {
+      $angleEl.removeClass('on-left on-right on-top on-bottom').css({ left: '', top: '' });
+      angleSize = $angleEl.width() / 2;
+    }
     $el
       .removeClass(
         'popover-on-left popover-on-right popover-on-top popover-on-bottom popover-on-middle',

@@ -20,6 +20,11 @@
     @ruleset();
   }
 }
+.if-aurora-theme(@ruleset) {
+  & when (@includeAuroraTheme) {
+    @ruleset();
+  }
+}
 .if-dark-theme(@ruleset) {
   & when(@includeDarkTheme) {
     @ruleset();
@@ -35,6 +40,13 @@
 .md-vars(@ruleset) {
   & when (@includeMdTheme) {
     .md {
+      @ruleset();
+    }
+  }
+}
+.aurora-vars(@ruleset) {
+  & when (@includeAuroraTheme) {
+    .aurora {
       @ruleset();
     }
   }

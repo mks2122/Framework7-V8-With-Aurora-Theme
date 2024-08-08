@@ -77,6 +77,11 @@ export default {
       mdSwipeBackAnimateOpacity: false,
       mdSwipeBackActiveArea: 30,
       mdSwipeBackThreshold: 0,
+      auroraSwipeBack: false,
+      auroraSwipeBackAnimateShadow: false,
+      auroraSwipeBackAnimateOpacity: true,
+      auroraSwipeBackActiveArea: 30,
+      auroraSwipeBackThreshold: 0,
       // Push State
       browserHistory: false,
       browserHistoryRoot: undefined,
@@ -96,6 +101,7 @@ export default {
       // Delays
       iosPageLoadDelay: 0,
       mdPageLoadDelay: 0,
+      auroraPageLoadDelay: 0,
       // Routes hooks
       routesBeforeEnter: null,
       routesBeforeLeave: null,

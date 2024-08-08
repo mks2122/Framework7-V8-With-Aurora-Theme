@@ -1,3 +1,4 @@
+
 import $ from './shared/dom7.js';
 import Framework7 from './components/app/app-class.js';
 
@@ -9,6 +10,10 @@ import UtilsModule from './modules/utils/utils.js';
 import ResizeModule from './modules/resize/resize.js';
 import TouchModule from './modules/touch/touch.js';
 import ClicksModule from './modules/clicks/clicks.js';
+
+//added the request module
+import RequestModule from './modules/request/request.js';
+
 import RouterModule from './modules/router/router.js';
 import HistoryModule from './modules/history/history.js';
 import ServiceWorkerModule from './modules/service-worker/service-worker.js';
@@ -32,6 +37,11 @@ Framework7.use([
   TouchModule,
   ClicksModule,
   RouterModule,
+
+    //added the request module
+    RequestModule,
+
+
   HistoryModule,
   ServiceWorkerModule,
   StoreModule,
