@@ -4,7 +4,7 @@
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
         <div class="left">
-          <a class="link back">
+          <a href="#" class="link back">
             <i class="icon icon-back"></i>
             <span class="if-not-md">Back</span>
           </a>
@@ -14,7 +14,7 @@
     </div>
     <div data-infinite-distance="50" class="page-content infinite-scroll-content" @infinite=${loadMore}>
       <div class="block-title">Scroll bottom</div>
-      <div class="list simple-list list-strong-ios list-outline-ios list-dividers-ios">
+      <div class="list simple-list">
         <ul>
           ${items.map((item, index) => $h`
           <li key=${index}>Item ${item}</li>

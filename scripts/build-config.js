@@ -121,7 +121,7 @@ const config = {
   ],
   darkTheme: true,
   lightTheme: true,
-  themes: ['ios', 'md'],
+  themes: ['ios', 'md','aurora'],
 };
 
 module.exports = config;

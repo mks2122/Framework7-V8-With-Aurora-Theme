@@ -4,7 +4,7 @@
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
         <div class="left">
-          <a class="link back">
+          <a href="#" class="link back">
             <i class="icon icon-back"></i>
             <span class="if-not-md">Back</span>
           </a>
@@ -13,11 +13,11 @@
       </div>
     </div>
     <div class="page-content">
-      <div class="block">
+      <div class="block block-strong">
         <p>In addition to default theme-specific page transition it is possible to create custom page transition or use
           one of the additional transition effects:</p>
       </div>
-      <div class="list inset list-strong list-dividers-ios links-list">
+      <div class="list links-list">
         <ul>
           ${effects.map((effect) => $h`
           <li><a href="/page-transitions/${effect}" data-transition="${effect}">${effect}</a></li>

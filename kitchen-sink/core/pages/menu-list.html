@@ -4,7 +4,7 @@
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
         <div class="left">
-          <a class="link back">
+          <a href="#" class="link back">
             <i class="icon icon-back"></i>
             <span class="if-not-md">Back</span>
           </a>
@@ -13,14 +13,14 @@
       </div>
     </div>
     <div class="page-content">
-      <div class="block">
+      <div class="block block-strong">
         <p>Menu list unlike usual links list is designed to indicate currently active screen (or section) of your app.
           Think about it like a Tabbar but in a form of a list.</p>
       </div>
-      <div class="list list-strong-ios list-outline-ios menu-list">
+      <div class="list menu-list">
         <ul>
           <li>
-            <a class="item-content item-link ${selected === 'home' ? 'item-selected' : ''}" @click=${()=>
+            <a href="#" class="item-content item-link ${selected === 'home' ? 'item-selected' : ''}" @click=${()=>
               setItem('home')}
               >
               <div class="item-media">
@@ -33,7 +33,7 @@
             </a>
           </li>
           <li>
-            <a class="item-content item-link ${selected === 'profile' ? 'item-selected' : ''}" @click=${()=>
+            <a href="#" class="item-content item-link ${selected === 'profile' ? 'item-selected' : ''}" @click=${()=>
               setItem('profile')}
               >
               <div class="item-media">
@@ -46,7 +46,7 @@
             </a>
           </li>
           <li>
-            <a class="item-content item-link ${selected === 'settings' ? 'item-selected' : ''}" @click=${()=>
+            <a href="#" class="item-content item-link ${selected === 'settings' ? 'item-selected' : ''}" @click=${()=>
               setItem('settings')}
               >
               <div class="item-media">
@@ -61,10 +61,10 @@
         </ul>
       </div>
 
-      <div class="list list-strong-ios list-outline-ios media-list menu-list">
+      <div class="list media-list menu-list">
         <ul>
           <li>
-            <a class="item-content item-link ${selectedMedia === 'home' ? 'item-selected' : ''}" @click=${()=>
+            <a href="#" class="item-content item-link ${selectedMedia === 'home' ? 'item-selected' : ''}" @click=${()=>
               setItemMedia('home')}
               >
               <div class="item-media">
@@ -80,7 +80,8 @@
             </a>
           </li>
           <li>
-            <a class="item-content item-link ${selectedMedia === 'profile' ? 'item-selected' : ''}" @click=${()=>
+            <a href="#" class="item-content item-link ${selectedMedia === 'profile' ? 'item-selected' : ''}"
+              @click=${()=>
               setItemMedia('profile')}
               >
               <div class="item-media">
@@ -96,7 +97,8 @@
             </a>
           </li>
           <li>
-            <a class="item-content item-link ${selectedMedia === 'settings' ? 'item-selected' : ''}" @click=${()=>
+            <a href="#" class="item-content item-link ${selectedMedia === 'settings' ? 'item-selected' : ''}"
+              @click=${()=>
               setItemMedia('settings')}
               >
               <div class="item-media">

@@ -4,7 +4,7 @@
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
         <div class="left">
-          <a class="link back">
+          <a href="#" class="link back">
             <i class="icon icon-back"></i>
             <span class="if-not-md">Back</span>
           </a>
@@ -18,17 +18,17 @@
           infinite/indeterminate progress bars to indicate some activity.</p>
       </div>
       <div class="block-title">Determinate Progress Bar</div>
-      <div class="block block-strong-ios block-outline-ios">
+      <div class="block block-strong">
         <p>When progress bar is determinate it indicates how long an operation will take when the percentage complete is
           detectable.</p>
         <p>Inline determinate progress bar:</p>
         <div>
           <p><span data-progress="10" class="progressbar" id="demo-inline-progressbar"></span></p>
           <p class="segmented segmented-raised">
-            <a class="button" @click=${()=> setInlineProgress(10)}>10%</a>
-            <a class="button" @click=${()=> setInlineProgress(30)}>30%</a>
-            <a class="button" @click=${()=> setInlineProgress(50)}>50%</a>
-            <a class="button" @click=${()=> setInlineProgress(100)}>100%</a>
+            <a href="#" class="button" @click=${()=> setInlineProgress(10)}>10%</a>
+            <a href="#" class="button" @click=${()=> setInlineProgress(30)}>30%</a>
+            <a href="#" class="button" @click=${()=> setInlineProgress(50)}>50%</a>
+            <a href="#" class="button" @click=${()=> setInlineProgress(100)}>100%</a>
           </p>
         </div>
         <div>
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="block-title">Infinite Progress Bar</div>
-      <div class="block block-strong-ios block-outline-ios">
+      <div class="block block-strong">
         <p>When progress bar is infinite/indeterminate it requests that the user wait while something finishes when it’s
           not necessary to indicate how long it will take.</p>
         <p>Inline infinite progress bar</p>
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="block-title">Colors</div>
-      <div class="list list-strong-ios list-outline-ios list-dividers-ios simple-list">
+      <div class="list simple-list">
         <ul>
           <li>
             <div class="progressbar color-blue" data-progress="10"></div>

@@ -18,14 +18,14 @@
 
 <body>
   <div id="app">
-    <div class="panel panel-left panel-floating panel-resizable panel-init">
+    <div class="panel panel-left panel-cover panel-resizable panel-init">
       <div class="page">
         <div class="page-content">
           <div class="block-title">Left Panel</div>
           <div class="block">
-            <p>This is a left side panel. You can close it by clicking outsite or on this link: <a
+            <p>This is a left side panel. You can close it by clicking outsite or on this link: <a href="#"
                 class="panel-close">close me</a>. You can put here anything, even another isolated view like in <a
-                data-panel="right" class="panel-open">Right Panel</a></p>
+                href="#" data-panel="right" class="panel-open">Right Panel</a></p>
           </div>
           <div class="block-title">Main View Navigation</div>
           <div class="list links-list">
@@ -77,8 +77,8 @@
         </div>
       </div>
     </div>
-    <div class="panel panel-right panel-floating panel-resizable panel-init">
-      <div class=" view view-init view-right" data-name="right" data-url="/">
+    <div class="panel panel-right panel-reveal panel-resizable panel-init">
+      <div class="view view-init view-right" data-name="right" data-url="/">
         <div class="page">
           <div class="navbar">
             <div class="navbar-bg"></div>
@@ -88,7 +88,7 @@
           </div>
           <div class="page-content">
             <div class="block">
-              <p>This is a right side panel. You can close it by clicking outsite or on this link: <a
+              <p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#"
                   class="panel-close">close me</a>. You can put here anything, even another isolated view.</p>
             </div>
             <div class="block-title">Panel Navigation</div>

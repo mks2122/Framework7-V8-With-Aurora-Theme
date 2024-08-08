@@ -4,7 +4,7 @@
       <div class="navbar-bg"></div>
       <div class="navbar-inner sliding">
         <div class="left">
-          <a class="link back">
+          <a href="#" class="link back">
             <i class="icon icon-back"></i>
             <span class="if-not-md">Back</span>
           </a>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="page-content">
-      <div class="block block-strong-ios block-outline-ios">
+      <div class="block block-strong">
         <p>Photo Browser is a standalone and highly configurable component that allows to open window with photo viewer
           and navigation elements with the following features:</p>
         <ul>
@@ -23,22 +23,22 @@
           <li>Single click on photo to toggle Exposition mode</li>
         </ul>
       </div>
-      <div class="block block-strong-ios block-outline-ios">
+      <div class="block block-strong">
         <p>Photo Browser could be opened in a three ways - as a Standalone component (Popup modification), in Popup, and
           as separate Page:</p>
-        <div class="grid grid-cols-3 grid-gap">
-          <a class="button button-fill" @click=${openStandalone}>Standalone</a>
-          <a class="button button-fill" @click=${openPopup}>Popup</a>
-          <a class="button button-fill" @click=${openPage}>Page</a>
+        <div class="row">
+          <div class="col-33"><a href="#" class="button button-fill" @click=${openStandalone}>Standalone</a></div>
+          <div class="col-33"><a href="#" class="button button-fill" @click=${openPopup}>Popup</a></div>
+          <div class="col-33"><a href="#" class="button button-fill" @click=${openPage}>Page</a></div>
         </div>
       </div>
-      <div class="block block-strong-ios block-outline-ios">
+      <div class="block block-strong">
         <p>Photo Browser supports 2 default themes - default Light (like in previous examples) and Dark theme. Here is a
           Dark theme examples:</p>
-        <div class="grid grid-cols-3 grid-gap">
-          <a class="button button-fill" @click=${openStandaloneDark}>Standalone</a>
-          <a class="button button-fill" @click=${openPopupDark}>Popup</a>
-          <a class="button button-fill" @click=${openPageDark}>Page</a>
+        <div class="row">
+          <div class="col-33"><a href="#" class="button button-fill" @click=${openStandaloneDark}>Standalone</a></div>
+          <div class="col-33"><a href="#" class="button button-fill" @click=${openPopupDark}>Popup</a></div>
+          <div class="col-33"><a href="#" class="button button-fill" @click=${openPageDark}>Page</a></div>
         </div>
       </div>
     </div>
@@ -62,13 +62,6 @@
         caption: 'Beautiful mountains in Zhangjiajie, China'
       }
     ];
-    const thumbs = [
-      'img/beach.jpg',
-      'http://placekitten.com/1024/1024',
-      'img/lock.jpg',
-      'img/monkey.jpg',
-      'img/mountains.jpg'
-    ]
 
     let standalone;
     let popup;
@@ -99,33 +92,27 @@
       // Create PBs when page init
       standalone = $f7.photoBrowser.create({
         photos: photos,
-        thumbs: thumbs,
       });
       popup = $f7.photoBrowser.create({
         photos: photos,
-        thumbs: thumbs,
         type: 'popup',
       });
       page = $f7.photoBrowser.create({
         photos: photos,
-        thumbs: thumbs,
         type: 'page',
         backLinkText: 'Back',
       });
       standaloneDark = $f7.photoBrowser.create({
         photos: photos,
-        thumbs: thumbs,
         theme: 'dark',
       });
       popupDark = $f7.photoBrowser.create({
         photos: photos,
-        thumbs: thumbs,
         type: 'popup',
         theme: 'dark',
       });
       pageDark = $f7.photoBrowser.create({
         photos: photos,
-        thumbs: thumbs,
         type: 'page',
         backLinkText: 'Back',
         theme: 'dark',
